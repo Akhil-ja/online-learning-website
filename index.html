@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Learning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Style.css">
+
+<body class="bg-light pt-5">
+
+
+    <!-- Navbar -->
+    <nav class="navbar  navbar-expand-lg bg-light fixed-top border-bottom small blur-filter">
+
+        <div class="container">
+
+            <a href="index.html" class="navbar-brand">
+                <img src="images\Logo.png" alt="" style="height: 30px;width: auto;"> <b class="fs-6">PrimeInspire</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">My learnings</a>
+                    </li>
+                  
+                </ul>
+
+
+
+                <div class="ms-auto me-1 d-grid d-md-block gap-2 mb-2-md-0">
+                    <a href="" class="btn btn-sm btn-danger align-items-center d-inline-flex  justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person-plus-fill me-2" viewBox="0 0 16 16">
+                            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            <path fill-rule="evenodd"
+                                d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+                        </svg>
+                        Sign-up
+                    </a>
+
+                    <a href="" class="btn btn-sm btn-warning d-inline-flex align-items-center  justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-box-arrow-in-right me-2 " viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                            <path fill-rule="evenodd"
+                                d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                        </svg>
+                        LogIn
+                    </a>
+                </div>
+                <form class="d-flex" role="search">
+                    <div class="input-group ">
+                        <input type="search" class="form-control form-control-sm " placeholder="Search for...">
+                        <button type="submit" class="btn btn-sm btn-success  ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Navbar -->
+
+
+    <!-- Banner -->
+
+    <header class="main-header py-5 border-bottom">
+
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-6">
+                    <div class="home-header-text-holder pe-md-5">
+                        <h1 class="fs-3 fw-normal">
+                            Start Your Web Design and Development Career with the Best Courses.</h1>
+                        <hr>
+                        <h2 class="fs-5 fw-light text-secondary">Elevate your web design and development expertise
+                            with
+                            our advanced courses. Unlock the next level of skills and stay
+                            ahead in the digital realm.</h2>
+                        <a href=""
+                            class="btn btn-sm btn-success mt-2 mb-3  align-items-center d-inline-flex justify-content-center ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-mortarboard-fill me-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z" />
+                                <path
+                                    d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z" />
+                            </svg> View Courses
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <div class="home-header-image-holder">
+                        <img class="rounded img-fluid shadow" src="images\Banner.jpg" alt="Banner">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- Banner -->
+
+    <!-- Side Features -->
+
+    <section class="side-features py-4 border-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-item d-flex align-items-center bg-white p-3 border rounded mb-md-0 mb-4">
+                        <div class="flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-film" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z" />
+                            </svg>
+                        </div>
+                        <div class="div flex-grow-1 ms-3">
+                            <h3 class="fs-6">Expert-led instruction</h3>
+                            <p class="small text-secondary">Our courses are taught by experienced web designers and
+                                developers who are passionate about teaching.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-item d-flex align-items-center bg-white p-3 border rounded mb-md-0 mb-4">
+                        <div class="flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-shield-check "
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56" />
+                                <path
+                                    d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                            </svg>
+                        </div>
+                        <div class="div flex-grow-1 ms-3">
+                            <h3 class="fs-6">Flexible learning options</h3>
+                            <p class="small text-secondary">We offer a variety of learning options to fit your schedule and budget, including online and in-person courses.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-item d-flex align-items-center bg-white p-3 border rounded mb-md-0 mb-4">
+                        <div class="flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+</svg>
+                        </div>
+                        <div class="div flex-grow-1 ms-3">
+                            <h3 class="fs-6">Expert-led instruction</h3>
+                            <p class="small text-secondary">Our courses are taught by experienced web designers and
+                                developers who are
+                                passionate about teaching.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Side Features -->
+
+
+    <!-- cource loop -->
+    <div class="course-loop py-4 border-bottom ">
+        <div class="container ">
+            <div class="row align-items-center ">
+                <div class="col-md-5">
+                    <div class="course-loop-heading text-md-center mb-4">
+                        <h4 class="fs-5">Free and Premium Web Design Development Courses for Every Budget</h4>
+                        <p class="small text-secondary">Whether you’re a beginner just starting out or a seasoned
+                            professional looking to brush up your skills, we offer a wide
+                            range of web design development courses to meet your needs.</p>
+
+                        <p class="small text-secondary">We have both free and premium courses available, so you can find
+                            the perfect course to fit your budget and learning
+                            goals.</p>
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center ">
+                    <!-- card -->
+                    <div class="card " style="width: 20rem;height: 24rem;">
+                        <img class="card-img-top" src="images\card1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Free Web Design Development Courses.</h5>
+                            <p class="card-text fs-9">Our free courses cover the basics of web design and development,
+                                such as HTML, CSS, JavaScript, Python and more. </p>
+                            <a href="#" class="btn btn-success  d-flex justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-mortarboard-fill me-1 mb-1 me-1 mt-1" 
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z" />
+                                    <path
+                                        d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z" />
+                                </svg>Explore Free Courses</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- cource loop -->
+
+
+    <!-- Blog post -->
+    <div class="container py-5">
+
+        <div class="  py-4">
+
+            <div class="container my-5">
+                <div class="row d-flex justify-content-center">
+
+                    <div class="col-md-6 ">
+                        <div class="home-header-text-holder pe-md-5 text-center">
+                            <h1 class="fs-3 fw-normal text-center">
+                                Web Design and Development Tips, Tricks, and Tutorials</h1>
+
+                            <h2 class="fs-6 fw-light text-secondary text-center">Our blog is a one-stop shop for web
+                                designers, developers and tech geeks of all levels, covering everything from HTML
+                                and CSS to responsive design and content management systems.</h2>
+                            <a href=""
+                                class="btn btn-sm btn-success mt-2 mb-3  align-items-center d-inline-flex justify-content-center ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-postcard-fill me-1" viewBox="0 0 16 16">
+                                    <path d="M11 8h2V6h-2v2Z" />
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm8.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM2 5.5a.5.5 0 0 0 .5.5H6a.5.5 0 0 0 0-1H2.5a.5.5 0 0 0-.5.5ZM2.5 7a.5.5 0 0 0 0 1H6a.5.5 0 0 0 0-1H2.5ZM2 9.5a.5.5 0 0 0 .5.5H6a.5.5 0 0 0 0-1H2.5a.5.5 0 0 0-.5.5Zm8-4v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5Z" />
+                                </svg>View All blog posts
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Blog post -->
+
+        <!-- card -->
+        <div class=" d-flex justify-content-center">
+            <div class=" row d-flex justify-content-center ">
+                <div class="col-md-3 col-sm-6 mb-xxl-0 mb-3 d-flex justify-content-center">
+                    <div class="card" style="width: 15rem;">
+                        <img class="card-img-top" src="images\blog1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text fw-bold">How to Create ENV File in React JS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-xxl-0 mb-3 d-flex justify-content-center">
+                    <div class="card" style="width: 15rem;">
+                        <img class="card-img-top" src="images\blog2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text fw-bold">How to Install Bootstrap 5 in Angular</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-xxl-0 mb-3 d-flex justify-content-center ">
+                    <div class="card" style="width: 15rem;">
+                        <img class="card-img-top" src="images\blog3.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text fw-bold">How to Change Bootstrap 5 Navbar Color</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-xxl-0 mb-3 d-flex justify-content-center">
+                    <div class="card" style="width: 15rem;">
+                        <img class="card-img-top" src="images\blog4.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text fw-bold">Build Beautiful HTML5 Accordions with Ease</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card -->
+
+    <!-- content -->
+
+    <div class="main-header py-5 border">
+
+        <div class="container ">
+            <div class="row align-items-center " style="display: flex; ">
+                <div class="col-md-6" >
+
+                    <div class="home-header-image-holder mb-3 ">
+                        <img class="rounded img-fluid shadow" src="images\Banner.jpg" alt="Banner">
+                    </div>
+
+                </div>
+                <div class="col-md-6 ">
+                    <div>
+                        <h1 class=" fw-lighter">Start Your Web Design and Development Career with the Best Courses.</h1>
+                    </div>
+
+                    <div class="home-header-text-holder pe-md-5 ">
+
+                        <h4 class="fs-6 fw-bold">Learn Web Design and Development with the Best Courses Online</h4>
+                        <p class="text-secondary">Our web design and development courses are designed to teach you the skills you need to build and design beautiful,
+                        user-friendly websites. You’ll learn about HTML, CSS, JavaScript, and more advanced topics like responsive design and
+                        content management systems.</p>
+                    </div>
+
+                    <div class="home-header-text-holder pe-md-5">
+                    
+                        <h4 class="fs-6 fw-bold">Master the Latest Web Development Technologies</h4>
+                        <p class="text-secondary">We keep our courses up-to-date with the latest web development
+                            technologies and trends. So you can be sure that you’re
+                            learning the skills you need to succeed in today’s competitive job market.</p>
+                    </div>
+
+                    <div class="home-header-text-holder pe-md-5">
+                    
+                        <h4 class="fs-6 fw-bold">Get Hands-On Experience with Real-World Projects</h4>
+                        <p class="text-secondary">Our courses are designed to give you hands-on experience with real-world web design and development projects. You’ll
+                        build your own portfolio of websites and web applications, which you can use to showcase your skills to potential
+                        employers.</p>
+                    </div>
+
+                    <div class="home-header-text-holder pe-md-5">
+                    
+                        <h4 class="fs-6 fw-bold">Get Hands-On Experience with Real-World Projects</h4>
+                        <p class="text-secondary">Our courses are designed to give you hands-on experience with real-world web design and
+                            development projects. You’ll
+                            build your own portfolio of websites and web applications, which you can use to showcase your skills to
+                            potential
+                            employers.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- content -->
+
+
+
+    <!-- footer -->
+
+<footer class="main-footer text-bg-dark py-5 small">
+
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-3 col-6">
+                <div class="brand-icon mb-2">
+                    <img src="images\Logo.png" alt="">
+                </div>
+                <address class="small text-secondary">
+                    Jayanagar, Bangalore,<br>
+                    Karnataka, India. <br>
+                    PIN-560011
+                </address>
+                <p class="small text-secondary">
+                    contact&commat;primeinspire.com
+                </p>
+            </div>
+            <div class="col-sm-3 col-6">
+                <h6>Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li><a class="text-secondary"  href="">Home</a></li>
+                    <li><a class="text-secondary"  href="">Premium Courses</a></li>
+                    <li><a  class="text-secondary" href="">Free Courses</a></li>
+                    <li><a class="text-secondary"  href="">Udemy Coupons</a></li>       
+                </ul>
+            </div>
+            <div class=" col-sm-3 col-6">
+                <h6>Other Pages</h6>
+                <ul class="list-unstyled">
+                    <li><a class="text-secondary"  href="">Privacy Policy</a></li>
+                    <li><a class="text-secondary"  href="">Terms & Conditions</a></li>
+                    <li><a class="text-secondary"  href="">Contact</a></li>
+                    <li><a class="text-secondary"  href="">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3 col-6">
+                <h6>Connect with us</h6>
+                <ul class="list-unstyled">
+                    <li><a class="text-secondary" href="">Facebook</a></li>
+                    <li><a class="text-secondary" href="">Twitter</a></li>
+                    <li><a class="text-secondary" href="">Instagram</a></li>
+                    <li><a class="text-secondary" href="">LinkedIn</a></li>
+                    <li><a class="text-secondary" href="">Tumblr</a></li>
+                    <li><a class="text-secondary" href="">YouTube</a></li>
+
+
+                </ul>
+            </div>
+
+            
+        </div>
+    </div>
+
+</footer>
+    <!-- footer -->
+
+
+
+
+    <!-- copyright -->
+    <div class="copy py-4 small" style="background-color: rgba(0, 0, 0, 0.934);">
+    <div class="container">
+        <div class="row justify-content-center text-center text-white">
+
+<p class="m-0 small">Copyright © 2023 All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+    <!-- copyright -->
+
+
+
+
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
